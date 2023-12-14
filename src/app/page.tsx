@@ -2,7 +2,58 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <section className='bg-blue-500 relative'>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+      <p>home</p>
+    </section>
   )
 }
 

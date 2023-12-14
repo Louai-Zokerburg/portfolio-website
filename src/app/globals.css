@@ -70,13 +70,13 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border transition-colors duration-300 ease-linear;
   }
 }
 
 @layer components {
   .main {
-    @apply pl-0 pt-[60px] lg:pl-[96px] lg:pt-0;
+    @apply bg-yellow-300 relative pl-0 pt-[60px] lg:pl-[96px] lg:pt-0;
   }
   .invert-white {
     @apply invert brightness-0 transition;
@@ -87,13 +87,13 @@
   }
 
   .sidebar {
-    @apply hidden lg:flex fixed px-3 py-4  flex-col justify-between items-center top-0 left-0 h-screen w-[96px] bg-secondary-color-light dark:bg-secondary-color-dark;
+    @apply z-50 hidden lg:flex fixed px-3 py-4  flex-col justify-between items-center top-0 left-0 h-screen w-[96px] bg-secondary-color-light dark:bg-secondary-color-dark;
   }
   .topbar {
-    @apply flex lg:hidden fixed px-4 py-2  justify-between items-center top-0 left-0 h-[55px] w-full bg-secondary-color-light dark:bg-secondary-color-dark;
+    @apply z-50 flex lg:hidden fixed px-4 py-2  justify-between items-center top-0 left-0 h-[55px] w-full bg-secondary-color-light dark:bg-secondary-color-dark;
   }
   .bottom-nav {
-    @apply flex lg:hidden fixed px-4  justify-center items-center bottom-0 left-0 h-[70px] w-full bg-secondary-color-light dark:bg-secondary-color-dark;
+    @apply z-50 flex lg:hidden fixed px-4  justify-center items-center bottom-0 left-0 h-[70px] w-full bg-secondary-color-light dark:bg-secondary-color-dark;
   }
 
   .nav-links {
@@ -106,5 +106,9 @@
 
   .selected-nav-link {
     @apply bg-accent-color-light dark:bg-accent-color-dark dark:text-primary-color;
+  }
+
+  .hero {
+    @apply bg-blue-300;
   }
 }

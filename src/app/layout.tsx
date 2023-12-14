@@ -32,8 +32,8 @@ export default function RootLayout({
           <Sidebar />
           <Topbar />
           <BottomNav />
-          <main className='main'>
 
+          <main className='main'>
             {children}
           </main>
 
