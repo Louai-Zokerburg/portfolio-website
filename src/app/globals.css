@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Styles */
-
-@layer base {
-  * {
-    @apply border-border transition-colors duration-300 ease-linear;
-  }
-}
 
 @layer components {
   .main {
