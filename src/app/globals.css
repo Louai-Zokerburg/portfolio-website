@@ -76,7 +76,7 @@
 
 @layer components {
   .main {
-    @apply pl-0 lg:pl-[96px];
+    @apply pl-0 pt-[60px] lg:pl-[96px] lg:pt-0;
   }
   .invert-white {
     @apply invert brightness-0 transition;
@@ -89,13 +89,19 @@
   .sidebar {
     @apply hidden lg:flex fixed px-3 py-4  flex-col justify-between items-center top-0 left-0 h-screen w-[96px] bg-secondary-color-light dark:bg-secondary-color-dark;
   }
+  .topbar {
+    @apply flex lg:hidden fixed px-4 py-2  justify-between items-center top-0 left-0 h-[55px] w-full bg-secondary-color-light dark:bg-secondary-color-dark;
+  }
+  .bottom-nav {
+    @apply flex lg:hidden fixed px-4  justify-center items-center bottom-0 left-0 h-[70px] w-full bg-secondary-color-light dark:bg-secondary-color-dark;
+  }
 
   .nav-links {
-    @apply list-none flex flex-col w-full justify-center items-center gap-y-4;
+    @apply font-semibold list-none flex lg:flex-col w-full justify-around lg:justify-center items-center gap-x-4 lg:gap-y-4;
   }
 
   .nav-link {
-    @apply duration-300 w-full rounded-md flex justify-center gap-y-2 items-center flex-col px-1 py-3 hover:bg-accent-color-light dark:hover:bg-accent-color-dark;
+    @apply duration-300 w-full rounded-md flex justify-center  gap-y-1 lg:gap-y-2 items-center flex-col px-4 py-2 lg:py-4 hover:bg-accent-color-light dark:hover:bg-accent-color-dark;
   }
 
   .selected-nav-link {

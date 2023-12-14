@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 
 import ThemeToggle from '@/components/theme-toggle'
 import Logo from '@/components/shared/logo'
-import NavigationLinks from './navigation-links'
+import NavigationLinks from '@/components/shared/navigation-links'
 
 
 const Sidebar = () => {

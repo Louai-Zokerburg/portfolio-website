@@ -4,6 +4,8 @@ import './globals.css'
 import { ThemeProvider } from "@/components/theme-provider"
 
 import Sidebar from '@/components/sidebar'
+import Topbar from '@/components/topbar'
+import BottomNav from '@/components/bottom-nav'
 
 const nunito = Nunito({ subsets: ['latin'] })
 
@@ -22,12 +24,14 @@ export default function RootLayout({
       <body className={`${nunito.className} bg-bg-color-light dark:bg-bg-color-dark`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
 
           <Sidebar />
+          <Topbar />
+          <BottomNav />
           <main className='main'>
 
             {children}
