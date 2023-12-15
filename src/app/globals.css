@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
   .main {
-    @apply bg-yellow-300 relative pl-0 pt-[60px] lg:pl-[96px] lg:pt-0;
+    @apply relative pl-0 pt-[60px] lg:pl-[96px] lg:pt-0;
   }
   .invert-white {
     @apply invert brightness-0 transition;
@@ -39,5 +41,37 @@
 
   .hero {
     @apply bg-blue-300;
+  }
+
+  .state-card {
+    @apply bg-secondary-color-light dark:bg-secondary-color-dark flex flex-col justify-center items-center w-[105px] lg:w-[150px] py-6 px-4 gap-y-2 lg:gap-y-3 rounded-lg text-center;
+  }
+}
+
+
+.spin-orbit-3 {
+  animation: spin 12s linear infinite;
+}
+.spin-orbit-2 {
+  animation: spin-reverse 24s linear infinite;
+}
+.spin-orbit-1 {
+  animation: spin 36s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }

@@ -2,13 +2,12 @@ import { TGeneralInfo, TField, TCertifecate, TProject } from '@/types';
 
 import { FaCode, FaServer, FaCog } from 'react-icons/fa';
 
-
 // General Informations
 export const generalInfo: TGeneralInfo = {
   hero_info: {
     greeting: 'Hi there, my name is',
     name: 'Louai Boumediene',
-    role: 'I am a Full Stack Web Developer',
+    role: 'I am a Full-stack Web Developer',
     intro:
       'Passionate in building highly interactive, beautiful web application that bring your idea to life and push your current  business to the next level.',
     stats: {
@@ -35,7 +34,6 @@ export const generalInfo: TGeneralInfo = {
     twitter: 'https://twitter.com/Louai_Dourov',
   },
 };
-
 
 // Fields Informations
 const frontendDevelopment: TField = {
@@ -174,38 +172,37 @@ export const fieldsInfo: TField[] = [
   devtoolsDevelopment,
 ];
 
-
 // Certefications Informations
 export const certefications: TCertifecate[] = [
-    {
-        title: 'Version Controle',
-        from: 'Meta',
-        credential_url: 'https://www.coursera.org/verify/7579S97DQWPN',
-        date: 'Mar 25, 2023',
-    },
-    {
-        title: 'Developing Back-End Apps with Node.js and Express',
-        from: 'IBM',
-        credential_url: 'https://www.coursera.org/verify/NN5CJV9M7TRH',
-        date: 'May 30, 2023',
-    },
-    {
-        title: 'Programming In Python',
-        from: 'Meta',
-        credential_url: 'https://www.coursera.org/verify/VCHN3E58ZAP8',
-        date: 'Mar 23, 2023',
-    },
-    {
-        title: 'MERN Stack Course - MongoDB, Express, React and NodeJS',
-        from: 'Udemy',
-        credential_url: 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-11a794b3-4291-4514-a22c-7ceb23268df4.pdf',
-        date: 'Dec 14, 2022',
-    },
-    {
-        title: 'Introduction to Databases for Back-End Development',
-        from: 'Meta',
-        credential_url: 'https://www.coursera.org/verify/A9HNGHFMQLAB',
-        date: 'Mar 29, 2023',
-    },
-
-]
+  {
+    title: 'Version Controle',
+    from: 'Meta',
+    credential_url: 'https://www.coursera.org/verify/7579S97DQWPN',
+    date: 'Mar 25, 2023',
+  },
+  {
+    title: 'Developing Back-End Apps with Node.js and Express',
+    from: 'IBM',
+    credential_url: 'https://www.coursera.org/verify/NN5CJV9M7TRH',
+    date: 'May 30, 2023',
+  },
+  {
+    title: 'Programming In Python',
+    from: 'Meta',
+    credential_url: 'https://www.coursera.org/verify/VCHN3E58ZAP8',
+    date: 'Mar 23, 2023',
+  },
+  {
+    title: 'MERN Stack Course - MongoDB, Express, React and NodeJS',
+    from: 'Udemy',
+    credential_url:
+      'https://udemy-certificate.s3.amazonaws.com/pdf/UC-11a794b3-4291-4514-a22c-7ceb23268df4.pdf',
+    date: 'Dec 14, 2022',
+  },
+  {
+    title: 'Introduction to Databases for Back-End Development',
+    from: 'Meta',
+    credential_url: 'https://www.coursera.org/verify/A9HNGHFMQLAB',
+    date: 'Mar 29, 2023',
+  },
+];

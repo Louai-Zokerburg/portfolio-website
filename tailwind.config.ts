@@ -12,10 +12,15 @@ module.exports = {
       center: true,
       padding: '2rem',
       screens: {
-        '2xl': '1400px',
+        'sm': '100%',
+        'lg': '1128px',
       },
     },
     extend: {
+      fontFamily: {
+        'nunito': ['nunito', 'sans-serif'],
+        'jetbrains': ['JetBrains Mono', 'sans-serif'],
+      },
       colors: {
         // shared colors
         'primary-color': '#CB76FF',
