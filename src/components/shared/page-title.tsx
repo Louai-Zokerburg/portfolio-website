@@ -12,7 +12,7 @@
 //                 const rect = titleRef.current.getBoundingClientRect();
 //                 // You can adjust the threshold based on your needs
 //                 console.log(rect.top);
-                
+
 //                 const isInTop = rect.top > 0;
 //                 setIsInTop(isInTop);
 //             }
@@ -49,8 +49,8 @@
 // export default PageTitle
 
 
-const PageTitleSimple = ({ title }: { title: string }) => {
-    
+const PageTitle = ({ title }: { title: string }) => {
+
     const [firstWord, ...restOfTitle] = title.split(' ');
 
     return (
@@ -64,4 +64,4 @@ const PageTitleSimple = ({ title }: { title: string }) => {
     )
 }
 
-export default PageTitleSimple
+export default PageTitle

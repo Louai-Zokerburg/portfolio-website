@@ -1,5 +1,6 @@
 import Orbits from '@/components/shared/orbits'
 import PageTitle from '@/components/shared/page-title'
+import Link from 'next/link'
 import React from 'react'
 
 const Projects = () => {
@@ -10,28 +11,7 @@ const Projects = () => {
             <PageTitle title='My Reccent Projects' />
 
             <article className='w-full px-4 lg:px-8 py-8 rounded-t-2xl mt-8 bg-secondary-color-light dark:bg-secondary-color-dark'>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
+                <Link href='projects/12'>Hello</Link>
             </article>                
             </section>
 
