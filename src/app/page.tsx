@@ -2,14 +2,9 @@ import React from 'react'
 
 import { generalInfo } from '@/data'
 import { Button } from '@/components/ui/button'
+import Orbits from '@/components/shared/orbits'
 
-import orbit_3_light from '@/assets/orbit_3_light.svg'
-import orbit_2_light from '@/assets/orbit_2_light.svg'
-import orbit_1_light from '@/assets/orbit_1_light.svg'
-import orbit_3_dark from '@/assets/orbit_3_dark.svg'
-import orbit_2_dark from '@/assets/orbit_2_dark.svg'
-import orbit_1_dark from '@/assets/orbit_1_dark.svg'
-import Image from 'next/image'
+
 
 const Home = () => {
   return (
@@ -62,21 +57,7 @@ const Home = () => {
         </div>
       </section>
 
-      <div className=' absolute top-0 flex justify-end items-center w-full h-screen overflow-hidden '>
-
-        <div className='hidden dark:lg:flex h-[900px] w-[900px] justify-center items-center'>
-          <Image src={orbit_3_dark} alt='orbig' className='spin-orbit-3 z-0 absolute w-[350px]' />
-          <Image src={orbit_2_dark} alt='orbig' className='spin-orbit-2 z-0 absolute w-[650px]' />
-          <Image src={orbit_1_dark} alt='orbig' className='spin-orbit-1 z-0 absolute w-[900px]' />
-        </div>
-
-        <div className='dark:hidden relative h-[900px] w-[900px] hidden lg:flex justify-center items-center'>
-          <Image src={orbit_3_light} alt='orbig' className='spin-orbit-3 z-0 absolute w-[350px]' />
-          <Image src={orbit_2_light} alt='orbig' className='spin-orbit-2 z-0 absolute w-[650px]' />
-          <Image src={orbit_1_light} alt='orbig' className='spin-orbit-1 z-0 absolute w-[900px]' />
-        </div>
-
-      </div>
+      <Orbits mini={false}/>
 
     </section>
   )

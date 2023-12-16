@@ -10,16 +10,22 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
+      padding: {
+        DEFAULT: '0.5rem',
+  
+        // md: '1rem',
+        lg: '2rem',
+     
+      },
       screens: {
-        'sm': '100%',
-        'lg': '1128px',
+        sm: '100%',
+        lg: '1128px',
       },
     },
     extend: {
       fontFamily: {
-        'nunito': ['nunito', 'sans-serif'],
-        'jetbrains': ['JetBrains Mono', 'sans-serif'],
+        nunito: ['nunito', 'sans-serif'],
+        jetbrains: ['JetBrains Mono', 'sans-serif'],
       },
       colors: {
         // shared colors
