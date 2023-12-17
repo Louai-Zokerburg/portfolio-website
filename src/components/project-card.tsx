@@ -9,7 +9,7 @@ const ProjectCard = ({ project, mini }: { project: TProject, mini?: boolean }) =
     const [firstWord, ...restOfTitle] = project.title.split(' ')
     return (
         <Link href={`/projects/${project.id}`} className='bg-accent-color-light dark:bg-accent-color-dark rounded-lg p-4 flex flex-col justify-start items-start gap-y-5 hover:translate-y-[-8px] duration-300'>
-            <Image src={project.images.cover} alt={`${project.title} cover image`} className='rounded-md w-full bg-center aspect-video' />
+            <Image src={project.images.cover} alt={`${project.title} cover image`} className='rounded-md w-full aspect-video' />
 
             <h3 className='font-semibold text-xl'>
                 <span className='text-primary-color'>{firstWord + ' '}</span>

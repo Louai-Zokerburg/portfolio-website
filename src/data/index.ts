@@ -2,10 +2,11 @@ import { TGeneralInfo, TField, TCertifecate, TProject } from '@/types';
 
 import { FaCode, FaServer, FaCog } from 'react-icons/fa';
 
-import project_1_cover from '@/assets/images/cover.png';
-import project_1_hero_light from '@/assets/images/hero_light.png';
-import project_1_hero_dark from '@/assets/images/hero_dark.png';
-
+import project_1_cover from '@/assets/images/project_1/project_1_cover.png';
+import project_2_cover from '@/assets/images/project_2/project_2_cover.png';
+import project_3_cover from '@/assets/images/project_3/project_3_cover.png';
+import project_4_cover from '@/assets/images/project_4/project_4_cover.png';
+import project_5_cover from '@/assets/images/project_5/project_5_cover.png';
 
 // General Informations
 export const generalInfo: TGeneralInfo = {
@@ -215,7 +216,7 @@ export const certefications: TCertifecate[] = [
 // Projecrs Information
 export const projectsInfo: TProject[] = [
   {
-    id: Date.now().toString(),
+    id: 'ai-code-converter',
     title: 'AI Powered Code Converter',
     description:
       'AI Code Converter is a MERN (MongoDB, Express.js, React.js, Node.js) stack web application that simplifies the translation of code snippets from one programming language to another. By integrating with the ChatGPT API, this tool provides developers with an effortless way to convert code snippets without manual intervention.',
@@ -231,20 +232,139 @@ export const projectsInfo: TProject[] = [
       'React.js',
       'Tailwindcss',
       'Zustand',
-      'Node.js,',
+      'Node.js',
+      'Express',
       'MongoDB',
       'ChatGPT API',
-    
     ],
     live_demo: 'https://ai-code-converter-client.vercel.app',
     source_code: 'https://github.com/Louai-Zokerburg/AI-Code-Converter',
     categories: ['', ''],
     images: {
       cover: project_1_cover,
-      screenshots: [
-        project_1_hero_dark,
-        project_1_hero_light
-      ],
+      screenshots: [project_1_cover],
+    },
+  },
+
+  {
+    id: 'louligram-social-media-app',
+    title: 'Louligram Social Media App',
+    description:
+      'Louligram is a social media (Instagram Clone)built with React, React Context, React Query, Typescript, Tailwind CSS, and Appwrite for the backend. It features a beautiful UI with light and dark themes, user authentication, post creation, profile viewing, following, liking posts, saving posts, and more.',
+    features: [
+      '💪🏻 User Authentication: Users can sign up or sign in securely using Appwrite for backend authentication',
+      '🧑🏻‍💻 Dynamic Theming: The app supports both light and dark themes, providing users with a visually appealing experience.',
+      '✨ Post Interaction: Users can create, view, like, and save posts. The app utilizes React Query for efficient data fetching and management.',
+      '🌓User Profiles: Users can view their own profiles and profiles of others, including their posts and followers.',
+      '🤩 Follow System: Louligram includes a follow system, allowing users to connect with each other.',
+      '😎 Fully Responsive: You can have a high quality user experience either form your phone or desktop.',
+    ],
+    technologies: [
+      'React.js',
+      'Tailwindcss',
+      'React Context',
+      'TypeScript',
+      'React Query',
+      'Appwrite',
+    ],
+    live_demo: 'https://louligram-social-media-app.vercel.app',
+    source_code:
+      'https://github.com/Louai-Zokerburg/louligram-social-media-app',
+    categories: ['', ''],
+    images: {
+      cover: project_2_cover,
+      screenshots: [project_2_cover],
+    },
+  },
+  {
+    id: 'my-portfolio-website',
+    title: 'Portfolio Website',
+    description:
+      'This is my personal portfolio website built using Next.js 13 with TypeScript, Tailwind CSS, and Shadcn UI library. The website features a light and dark theme and includes three main pages: Home, About, and Projects. It is designed to be aesthetically pleasing and performs efficiently.',
+    features: [
+      '🌒 Light and Dark Theme: Toggle between light and dark themes for a personalized experience.',
+      '🌐 Modern Looking Beautiful Sidebar Navigations: Enjoy seamless navigation with a visually appealing sidebar that enhances user experience.',
+      '✨ Beautiful Modern UI/UX with Engaging Animations: Experience a stunning user interface with modern design principles and engaging animations that captivate visitors.',
+      '📱 Responsive Design: Explore the portfolio on various devices, as the website is designed to be responsive and provide an optimal viewing experience across different screen sizes.',
+      '🗂️ Categorized Projects: Easily find and explore projects with a categorized display, allowing visitors to filter and view projects based on different criteria.',
+      '📄  Single Project Details Page: Dive into the details of each project with dedicated single project pages, providing comprehensive information, images, and any other relevant details.',
+    ],
+    technologies: [
+      'React.js',
+      'Next.js 13',
+      'Tailwindcss',
+      'TypeScript',
+      'Shadcn UI',
+    ],
+    live_demo: 'https://portfolio-website-gray-theta.vercel.app',
+    source_code: 'https://github.com/Louai-Zokerburg/portfolio-website',
+    categories: ['', ''],
+    images: {
+      cover: project_3_cover,
+      screenshots: [project_3_cover],
+    },
+  },
+  {
+    id: 'jobify-jobs-board',
+    title: 'Jobify MERN Jobs Board',
+    description:
+      'Jobify is a full-stack MERN (MongoDB, Express, React, Node.js) web application that empowers users to manage job-related activities efficiently. The app provides a feature-rich interface with secure authentication, comprehensive job management, and user profile customization.',
+    features: [
+      '🌐 User Authentication: Securely sign up or log in to access personalized features.',
+      '🕵️ Job Browsing: Explore a vast array of available jobs with detailed information.',
+      '➕ Add New Jobs: Registered users can contribute to the job board by adding new job listings.',
+      '❌ Delete Jobs: Remove job listings that are no longer relevant or required',
+      '🔍 Search Jobs: Easily search for specific jobs based on keywords or criteria.',
+      '🎯 Filter Jobs: Utilize filtering options to narrow down job listings based on various parameters.',
+      '🔐 Login & Signup: A secure authentication system for user accounts.',
+      '🖼️ Add Profile Picture: Personalize your profile by adding a custom profile picture.',
+    ],
+    technologies: [
+      'React.js',
+      'Styled Components',
+      'React Query',
+      'React Context',
+      'Rechats.js',
+      'Axios',
+      'Express',
+      'Node.js',
+      'Mongo DB',
+      'Cloudinary',
+      'JWT Auth',
+    ],
+    live_demo: 'https://jobfy-mern-app.onrender.com',
+    source_code: 'https://github.com/Louai-Zokerburg/mern-stack-jobify',
+    categories: ['', ''],
+    images: {
+      cover: project_4_cover,
+      screenshots: [project_4_cover],
+    },
+  },
+  {
+    id: 'digital-fennec-landing-page',
+    title: 'Digital Fennec Landing Page',
+    description:
+      'Welcome to the Fennec Digital website repository! Explore our world of innovative and captivating mobile games. Learn more about our company, mission, and the exciting experiences we create.',
+    features: [
+      'Dynamic Content: Built using Next.js for a responsive and dynamic user experience.',
+      'Multi-Departmental Showcase: Discover our Full Stack, Graphic and Art Design, and Game Development departments.',
+      'Funky Games: Explore our whimsical and engaging game portfolio.',
+      'Contact Us: Easily connect with us for inquiries and collaborations.',
+    ],
+    technologies: [
+      'React.js',
+      'Next.js',
+      'JavaScript',
+      'Tailwindcss',
+      'AOS (Animation on scroll)',
+      'Git/GitHub ',
+    ],
+    live_demo: 'https://digital-fennec-website.vercel.app',
+    source_code: 'https://github.com/Louai-Zokerburg/digital-fennec-website-v2',
+    categories: ['', ''],
+    images: {
+      cover: project_5_cover,
+      screenshots: [project_5_cover],
     },
   },
 ];
