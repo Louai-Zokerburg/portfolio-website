@@ -3,6 +3,8 @@ import { Nunito } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from "@/components/theme-provider"
 
+import { Analytics } from '@vercel/analytics/react';
+
 import Sidebar from '@/components/sidebar'
 import Topbar from '@/components/topbar'
 import BottomNav from '@/components/bottom-nav'
@@ -38,6 +40,7 @@ export default function RootLayout({
           </main>
 
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
