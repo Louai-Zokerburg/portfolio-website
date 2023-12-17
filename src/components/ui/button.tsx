@@ -17,12 +17,12 @@ const buttonVariants = cva(
           "border border-slate-200 bg-white hover:bg-slate-100 hover:text-slate-900 dark:border-slate-800 dark:bg-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50",
         secondary:
           "bg-accent-color-light text-black-color-light dark:bg-accent-color-dark dark:text-white-color dark:hover:bg-accent-color-dark/80",
-        ghost: "hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-50",
+        ghost: "hover:bg-secondary-color-light  dark:hover:bg-secondary-color-dark ",
         link: "text-slate-900 underline-offset-4 hover:underline dark:text-slate-50",
       },
       size: {
         default: "h-10 px-4 py-2 rounded-full",
-        sm: "h-9 rounded-md px-3",
+        sm: "h-9 rounded-md px-3 rounded-full",
         lg: "h-10 rounded-full px-8 lg:px-12",
         icon: "h-10 w-10  rounded-full",
       },

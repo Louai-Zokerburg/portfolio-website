@@ -16,7 +16,7 @@ const Projects = () => {
             <section className=' z-10 relative container flex flex-col justify-center items-start'>
                 <PageTitle title='My Reccent Projects' />
 
-                <div className='w-full px-4 lg:px-8 py-8 grid gap-4 rounded-t-2xl mt-8 bg-secondary-color-light dark:bg-secondary-color-dark grid-cols-1 md:grid-cols-2'>
+                <div className='w-full px-4 lg:px-8 py-8 grid gap-6 rounded-t-2xl mt-8 bg-secondary-color-light dark:bg-secondary-color-dark grid-cols-1 md:grid-cols-2'>
                     {
                         projectsInfo.map(project => (
                             <ProjectCard
