@@ -2,6 +2,11 @@ import { TGeneralInfo, TField, TCertifecate, TProject } from '@/types';
 
 import { FaCode, FaServer, FaCog } from 'react-icons/fa';
 
+import project_1_cover from '@/assets/images/cover.png';
+import project_1_hero_light from '@/assets/images/hero_light.png';
+import project_1_hero_dark from '@/assets/images/hero_dark.png';
+
+
 // General Informations
 export const generalInfo: TGeneralInfo = {
   hero_info: {
@@ -204,5 +209,42 @@ export const certefications: TCertifecate[] = [
     from: 'Meta',
     credential_url: 'https://www.coursera.org/verify/A9HNGHFMQLAB',
     date: 'Mar 29, 2023',
+  },
+];
+
+// Projecrs Information
+export const projectsInfo: TProject[] = [
+  {
+    id: Date.now().toString(),
+    title: 'AI Powered Code Converter',
+    description:
+      'AI Code Converter is a MERN (MongoDB, Express.js, React.js, Node.js) stack web application that simplifies the translation of code snippets from one programming language to another. By integrating with the ChatGPT API, this tool provides developers with an effortless way to convert code snippets without manual intervention.',
+    features: [
+      '💪🏻 A Solid & robust authentication system: Using the JWT Tokens.',
+      '🧑🏻‍💻 Language Agnostic: Supports translation between a wide range of programming languages..',
+      '✨ User-Friendly Interface: Intuitive web interface for easy code input and output.',
+      '🌓 Multi Theme: It provides Dark and Light theme.',
+      '🤖 ChatGPT Integration: Utilizes the ChatGPT API for accurate and context-aware code translations.',
+      '🤩 History Tracking: Keeps a record of past translations for reference.',
+    ],
+    technologies: [
+      'React.js',
+      'Tailwindcss',
+      'Zustand',
+      'Node.js,',
+      'MongoDB',
+      'ChatGPT API',
+    
+    ],
+    live_demo: 'https://ai-code-converter-client.vercel.app',
+    source_code: 'https://github.com/Louai-Zokerburg/AI-Code-Converter',
+    categories: ['', ''],
+    images: {
+      cover: project_1_cover,
+      screenshots: [
+        project_1_hero_dark,
+        project_1_hero_light
+      ],
+    },
   },
 ];

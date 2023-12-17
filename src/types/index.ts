@@ -1,3 +1,4 @@
+import { StaticImageData } from 'next/image';
 import { IconType } from 'react-icons';
 
 // General Info Types
@@ -53,10 +54,11 @@ export type TCertifecate = {
 
 // Projects Types
 export type TProject = {
+  id: string;
   title: string;
   images: {
-    cover: string;
-    screenshots: string[];
+    cover: StaticImageData;
+    screenshots: StaticImageData[];
   };
   description: string;
   features: string[];

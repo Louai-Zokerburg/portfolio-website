@@ -4,23 +4,10 @@ import React from 'react'
 import Orbits from '@/components/shared/orbits'
 import PageTitle from '@/components/shared/page-title'
 
-import { Button } from '@/components/ui/button'
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import {
-    Tabs,
-    TabsContent,
-    TabsList,
-    TabsTrigger,
-} from "@/components/ui/tabs"
+
+import ProjectCard from '@/components/project-card'
+
+import { projectsInfo } from '@/data'
 
 const Projects = () => {
     return (
@@ -29,8 +16,31 @@ const Projects = () => {
             <section className=' z-10 relative container flex flex-col justify-center items-start'>
                 <PageTitle title='My Reccent Projects' />
 
-                <article className='w-full px-4 lg:px-8 py-8 rounded-t-2xl mt-8 bg-secondary-color-light dark:bg-secondary-color-dark'>
-                    <Tabs defaultValue="account" className="w-full">
+                <div className='w-full px-4 lg:px-8 py-8 grid gap-4 rounded-t-2xl mt-8 bg-secondary-color-light dark:bg-secondary-color-dark grid-cols-1 md:grid-cols-2'>
+                    {
+                        projectsInfo.map(project => (
+                            <ProjectCard
+                                project={project}
+                            />
+                        ))
+                    }
+
+                </div>
+            </section>
+
+            <Orbits mini={true} />
+        </section>
+    )
+}
+
+export default Projects
+
+
+
+
+
+/**
+ * { <Tabs defaultValue="account" className="w-full">
                         <TabsList className="grid w-full grid-cols-4">
                             <TabsTrigger value="all">All projects</TabsTrigger>
                             <TabsTrigger value="mern">MERN projects</TabsTrigger>
@@ -50,13 +60,5 @@ const Projects = () => {
                         <TabsContent value="apis">
                             <h3>Backend APIs</h3>
                         </TabsContent>
-                    </Tabs>
-                </article>
-            </section>
-
-            <Orbits mini={true} />
-        </section>
-    )
-}
-
-export default Projects
+                    </Tabs> 
+ */
