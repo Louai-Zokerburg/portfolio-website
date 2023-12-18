@@ -46,7 +46,7 @@ const frontendDevelopment: TField = {
   title: 'Frontend Development',
   description:
     'Frontend development shapes user experiences through responsive design and seamless interactivity.',
-  icon: FaCode,
+  icon: FaCode ,
   skills: [
     {
       name: 'HTML, CSS, JS',

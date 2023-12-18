@@ -10,6 +10,7 @@ import Link from 'next/link'
 
 import { FaArrowLeft } from "react-icons/fa";
 import { Button } from '@/components/ui/button'
+import SectionTitle from '@/components/shared/section-title'
 
 const SingleProject = ({ params }: { params: { id: string } }) => {
 
@@ -23,7 +24,7 @@ const SingleProject = ({ params }: { params: { id: string } }) => {
 
             <section className=' z-10 relative container flex flex-col justify-center items-start'>
 
-            
+
 
                 <ProjectTitle title={project.title} sourceCode={project.source_code} liveDemo={project.live_demo} />
 
@@ -36,12 +37,13 @@ const SingleProject = ({ params }: { params: { id: string } }) => {
                         <div className='lg:w-2/3'>
 
                             <div className='mb-8'>
-                                <h4 className='text-xl lg:text-2xl mb-3 font-medium'>About the Project</h4>
+                                <SectionTitle title='Project Description' />
+
                                 <p className='pl-4'>{project.description}</p>
                             </div>
 
                             <div className='mb-8'>
-                                <h4 className='text-xl lg:text-2xl font-medium mb-3'>Project Features</h4>
+                                <SectionTitle title='Project Features' />
                                 <ul className='pl-4'>
                                     {
                                         project.features.map((feature, index) => <li className='my-2'>{(index + 1).toString() + ' . ' + feature}</li>)
@@ -52,7 +54,8 @@ const SingleProject = ({ params }: { params: { id: string } }) => {
                         </div>
 
                         <div className='mb-8'>
-                            <h4 className='text-xl lg:text-2xl font-medium mb-3'>Project Tech Stack</h4>
+                            <SectionTitle title='Project Technologies' />
+
                             <ul className='pl-4'>
                                 {
                                     project.technologies.map((tech, index) => <li className='my-2'>{(index + 1).toString() + ' . ' + tech}</li>)
@@ -62,12 +65,13 @@ const SingleProject = ({ params }: { params: { id: string } }) => {
                         </div>
                     </div>
 
-                    <h4 className='text-xl lg:text-2xl font-medium'>Other Projects</h4>
+                    <SectionTitle title='Other Projects' />
+
                     <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                         {
                             otherProjects.map(project => (
 
-                                <ProjectCard project={project} mini={true}/>
+                                <ProjectCard project={project} mini={true} />
                             ))
                         }
                     </div>

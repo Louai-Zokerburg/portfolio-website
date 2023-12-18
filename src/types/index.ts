@@ -40,7 +40,7 @@ type TSkill = {
 export type TField = {
   title: string;
   description: string;
-  icon: IconType;
+  icon: React.ReactNode;
   skills: TSkill[];
 };
 
