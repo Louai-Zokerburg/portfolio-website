@@ -26,7 +26,7 @@ const ProjectCard = ({ project, mini }: { project: TProject, mini?: boolean }) =
             <ul className='list-none flex justify-start items-center w-full flex-wrap gap-x-1 gap-y-[6px]'>
                 {
                     project.technologies.map(tech => (
-                        <li className='px-3 py-[6px] font-medium font-jetbrains bg-bg-color-light/60 dark:bg-bg-color-dark/60 rounded-full text-[10px]'>
+                        <li key={tech} className='px-3 py-[6px] font-medium font-jetbrains bg-bg-color-light/60 dark:bg-bg-color-dark/60 rounded-full text-[10px]'>
                             {tech}
                         </li>
                     ))
