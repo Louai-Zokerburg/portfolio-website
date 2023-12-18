@@ -46,7 +46,7 @@ const SingleProject = ({ params }: { params: { id: string } }) => {
                                 <SectionTitle title='Project Features' />
                                 <ul className='pl-4'>
                                     {
-                                        project.features.map((feature, index) => <li className='my-2'>{(index + 1).toString() + ' . ' + feature}</li>)
+                                        project.features.map((feature, index) => <li key={index} className='my-2'>{(index + 1).toString() + ' . ' + feature}</li>)
                                     }
                                 </ul>
 
@@ -58,7 +58,7 @@ const SingleProject = ({ params }: { params: { id: string } }) => {
 
                             <ul className='pl-4'>
                                 {
-                                    project.technologies.map((tech, index) => <li className='my-2'>{(index + 1).toString() + ' . ' + tech}</li>)
+                                    project.technologies.map((tech, index) => <li key={index} className='my-2'>{(index + 1).toString() + ' . ' + tech}</li>)
                                 }
                             </ul>
 
@@ -71,7 +71,7 @@ const SingleProject = ({ params }: { params: { id: string } }) => {
                         {
                             otherProjects.map(project => (
 
-                                <ProjectCard project={project} mini={true} />
+                                <ProjectCard key={project.id} project={project} mini={true} />
                             ))
                         }
                     </div>

@@ -20,6 +20,7 @@ const Projects = () => {
                     {
                         projectsInfo.map(project => (
                             <ProjectCard
+                                key={project.id}
                                 project={project}
                             />
                         ))

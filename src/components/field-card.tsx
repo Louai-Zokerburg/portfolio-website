@@ -15,7 +15,7 @@ const FielCard = ({field}: {field: TField}) => {
 
                             {
                                 field.skills.map(skill => (
-                                    <div className='w-full flex flex-col justify-center items-center my-4 gap-y-1'>
+                                    <div key={skill.name} className='w-full flex flex-col justify-center items-center my-4 gap-y-1'>
                                         <div className='flex justify-between items-center  w-full'>
                                             <div className='flex justify-start items-center gap-x-1'>
                                             {/* <FaChevronRight size={12} /> */}
