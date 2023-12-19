@@ -9,7 +9,7 @@ import orbit_2_dark from '@/assets/orbit_2_dark.svg'
 import orbit_1_dark from '@/assets/orbit_1_dark.svg'
 
 const Orbits = ({ mini }: { mini?: boolean }) => {
-    
+
     return (
         <div className={`fixed top-0 border-accent-color-light dark:border-accent-color-dark flex justify-end items-center w-full ${mini ? 'h-[30vh] lg:h-[50vh] border-b-4' : 'h-screen border-b-0'} overflow-hidden`}>
 

@@ -7,7 +7,7 @@
 
 @layer components {
   .main {
-    @apply relative pl-0 pt-[60px] lg:pl-[96px] lg:pt-0;
+    @apply relative pl-0 pt-[60px] pb-[88px] lg:pb-0 lg:pl-[96px] lg:pt-0;
   }
   .invert-white {
     @apply invert brightness-0 transition;
@@ -50,13 +50,13 @@
 
 
 .spin-orbit-3 {
-  animation: spin 12s linear infinite;
+  animation: spin 18s linear infinite;
 }
 .spin-orbit-2 {
-  animation: spin-reverse 24s linear infinite;
+  animation: spin-reverse 36s linear infinite;
 }
 .spin-orbit-1 {
-  animation: spin 36s linear infinite;
+  animation: spin 52s linear infinite;
 }
 
 @keyframes spin {

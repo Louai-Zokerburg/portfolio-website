@@ -8,10 +8,15 @@ import PageTitle from '@/components/shared/page-title'
 import ProjectCard from '@/components/project-card'
 
 import { projectsInfo } from '@/data'
+import MotionSection from '@/components/shared/motion-section'
 
 const Projects = () => {
     return (
-        <section className='relative' >
+        <MotionSection
+            initial={{ opacity: 0, translateY: 25 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.5 }}
+            className='relative' >
 
             <section className=' z-10 relative container flex flex-col justify-center items-start'>
                 <PageTitle title='My Reccent Projects' />
@@ -30,7 +35,7 @@ const Projects = () => {
             </section>
 
             <Orbits mini={true} />
-        </section>
+        </MotionSection>
     )
 }
 

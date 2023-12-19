@@ -4,13 +4,20 @@ import { generalInfo } from '@/data'
 import { Button } from '@/components/ui/button'
 import Orbits from '@/components/shared/orbits'
 
+import MotionSection from '@/components/shared/motion-section'
+import Link from 'next/link'
+
 
 
 const Home = () => {
   return (
-    <section className='relative' >
+    <section
+      className='relative'>
 
-      <section className='z-10 relative container flex flex-col justify-center items-center text-center lg:text-start lg:items-start h-[calc(100vh-60px)] lg:h-screen'>
+      <MotionSection
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }} className='z-10 relative container flex flex-col justify-center items-center text-center lg:text-start lg:items-start h-[calc(100vh-60px)] lg:h-screen'>
         {/* Hero Conetent  */}
         <article className='mb-8 flex flex-col gap-y-2 lg:gap-y-4'>
           <h3 className='font-jetbrains font-medium text-base lg:text-lg'>{generalInfo.hero_info.greeting}</h3>
@@ -23,9 +30,12 @@ const Home = () => {
 
         {/* CTA Buttons  */}
         <div className='flex justify-center items-center gap-x-4 mt-8 lg:mt-12'>
-          <Button size='lg'>
-            <p className='font-semibold text-base lg:text-lg'>My projects</p>
-          </Button>
+
+          <Link href='projects'>
+            <Button size='lg'>
+              <p className='font-semibold text-base lg:text-lg'>My projects</p>
+            </Button>
+          </Link>
           <Button variant='secondary' size='lg'>
             <p className='font-semibold text-base lg:text-lg'>My resume</p>
           </Button>
@@ -55,9 +65,9 @@ const Home = () => {
             </span>
           </article>
         </div>
-      </section>
+      </MotionSection>
 
-      <Orbits mini={false}/>
+      <Orbits mini={false} />
 
     </section>
   )

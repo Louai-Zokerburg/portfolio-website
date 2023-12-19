@@ -24,12 +24,9 @@ export const generalInfo: TGeneralInfo = {
   },
   about_info: {
     bio: `
-        I'm Louai, a Full-stack web developer and student at M'hamed Bouguerra University.
-
-        I began my journey as a front-end developer with over 2 years of experience, focusing on web development, UI/UX design, and staying current with industry trends. 
-
-        Now, I've transitioned into a full-stack developer with proficiency in both front-end and backend technologies, including Express, Node, MongoDB. I've completed couple legitimate  projects, demonstrating strong attention to detail and problem-solving skills, even under pressure. 
-
+        I'm Louai, a Full-stack web developer and student at M'hamed Bouguerra University.\n\n
+        I began my journey as a front-end developer with over 2 years of experience, focusing on web development, UI/UX design, and staying current with industry trends.\n\n
+        Now, I've transitioned into a full-stack developer with proficiency in both front-end and backend technologies, including Express, Node, MongoDB. I've completed couple legitimate  projects, demonstrating strong attention to detail and problem-solving skills, even under pressure.\n\n
         My experience equips me to handle diverse and complex projects, and I'm excited to continue contributing to the world of web development.
     `,
   },

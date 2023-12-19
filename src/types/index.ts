@@ -57,8 +57,8 @@ export type TProject = {
   id: string;
   title: string;
   images: {
-    cover: StaticImageData;
-    screenshots: StaticImageData[];
+    cover: string | StaticImageData;
+    screenshots: string[] | StaticImageData[];
   };
   description: string;
   features: string[];

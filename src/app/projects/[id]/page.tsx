@@ -12,6 +12,8 @@ import { FaArrowLeft } from "react-icons/fa";
 import { Button } from '@/components/ui/button'
 import SectionTitle from '@/components/shared/section-title'
 
+import MotionSection from '@/components/shared/motion-section'
+
 const SingleProject = ({ params }: { params: { id: string } }) => {
 
     const project: TProject = projectsInfo.find(project => project.id === params.id)!
@@ -20,7 +22,11 @@ const SingleProject = ({ params }: { params: { id: string } }) => {
 
 
     return (
-        <section className='relative' >
+        <MotionSection 
+        initial={{ opacity: 0, translateY: 25}}
+        animate={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 0.5 }}
+            className='relative' >
 
             <section className=' z-10 relative container flex flex-col justify-center items-start'>
 
@@ -29,7 +35,7 @@ const SingleProject = ({ params }: { params: { id: string } }) => {
                 <ProjectTitle title={project.title} sourceCode={project.source_code} liveDemo={project.live_demo} />
 
                 <article className='w-full px-4 lg:px-8 py-8 rounded-t-2xl mt-8 bg-secondary-color-light dark:bg-secondary-color-dark flex flex-col justify-start items-start gap-y-8'>
-                    <Image src={project.images.cover} alt='project cover image' className=' w-full rounded-xl' />
+                    <Image placeholder='blur' src={project.images.cover} alt='project cover image' className=' w-full rounded-xl' />
 
                     <span className='h-[5px] w-full bg-accent-color-light dark:bg-accent-color-dark rounded-full'></span>
 
@@ -65,21 +71,24 @@ const SingleProject = ({ params }: { params: { id: string } }) => {
                         </div>
                     </div>
 
-                    <SectionTitle title='Other Projects' />
 
-                    <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-                        {
-                            otherProjects.map(project => (
+                    <div className='mt-4'>
+                        <SectionTitle title='Other Projects' />
 
-                                <ProjectCard key={project.id} project={project} mini={true} />
-                            ))
-                        }
+                        <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+                            {
+                                otherProjects.map(project => (
+
+                                    <ProjectCard key={project.id} project={project} mini={true} />
+                                ))
+                            }
+                        </div>
                     </div>
                 </article>
             </section>
 
             <Orbits mini={true} />
-        </section>
+        </MotionSection>
     )
 }
 
