@@ -15,7 +15,11 @@ export type TGeneralInfo = {
     };
   };
   about_info: {
-    bio: string;
+    bio: {
+      intro: string;
+      main: string;
+      outro: string
+    }
   };
   contact_info: {
     email: string;

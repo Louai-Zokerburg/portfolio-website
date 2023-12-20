@@ -31,7 +31,9 @@ const About = () => {
                         <Image placeholder='blur' className='lg:w-1/2 z-5 aspect-auto rounded-lg' src={me} alt='My Image Picture' />
                         <div className='lg:w-1/2 flex flex-col justify-around items-start'>
                             <SectionTitle title='About Me' />
-                            <p className=' leading-loose text-sm lg:text-base'>{generalInfo.about_info.bio}</p>
+                            <p className=' leading-loose text-sm lg:text-base'>{generalInfo.about_info.bio.intro}</p>
+                            <p className=' leading-loose text-sm lg:text-base'>{generalInfo.about_info.bio.main}</p>
+                            <p className=' leading-loose text-sm lg:text-base'>{generalInfo.about_info.bio.outro}</p>
                         </div>
                     </article>
 
