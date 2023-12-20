@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import { FaRegAddressCard, FaCode } from "react-icons/fa"
 import { FaHouse } from "react-icons/fa6"
 
+
 type PropTypes = {
     mobile?: boolean
 }

@@ -44,10 +44,9 @@
   }
 
   .state-card {
-    @apply bg-secondary-color-light dark:bg-secondary-color-dark flex flex-col justify-center items-center w-[105px] lg:w-[150px] py-6 px-4 gap-y-2 lg:gap-y-3 rounded-lg text-center;
+    @apply bg-secondary-color-light/70 dark:bg-secondary-color-dark/70 hover:bg-secondary-color-light dark:hover:bg-secondary-color-dark hover:translate-y-[-8px] duration-300 flex flex-col justify-center items-center w-[105px] lg:w-[150px] py-6 px-4 gap-y-2 lg:gap-y-3 rounded-lg text-center;
   }
 }
-
 
 .spin-orbit-3 {
   animation: spin 18s linear infinite;

@@ -22,7 +22,7 @@ const Home = () => {
         <article className='mb-8 flex flex-col gap-y-2 lg:gap-y-4'>
           <h3 className='font-jetbrains font-medium text-base lg:text-lg'>{generalInfo.hero_info.greeting}</h3>
           <h1 className='font-bold text-3xl lg:text-5xl'>{generalInfo.hero_info.name}</h1>
-          <h1 className='font-bold text-3xl lg:text-5xl'>{generalInfo.hero_info.role}</h1>
+          <h1 className='font-bold text-3xl lg:text-5xl'>I am a <span className='text-primary-color'>{generalInfo.hero_info.role}</span></h1>
         </article>
 
         {/* Hero Intro */}
@@ -36,9 +36,11 @@ const Home = () => {
               <p className='font-semibold text-base lg:text-lg'>My projects</p>
             </Button>
           </Link>
-          <Button variant='secondary' size='lg'>
-            <p className='font-semibold text-base lg:text-lg'>My resume</p>
-          </Button>
+          <Link href='https://drive.google.com/file/d/1c7-UIHy8GUvgj2XHuf7nfhUU4vpjRXSt/view' target='_blank'>
+            <Button variant='secondary' size='lg'>
+              <p className='font-semibold text-base lg:text-lg'>My resume</p>
+            </Button>
+          </Link>
         </div>
 
         {/* Hero Cards  */}

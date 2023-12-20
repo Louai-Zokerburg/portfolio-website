@@ -13,11 +13,11 @@ export const generalInfo: TGeneralInfo = {
   hero_info: {
     greeting: 'Hi there, my name is',
     name: 'Louai Boumediene',
-    role: 'I am a Full-stack Web Developer',
+    role: 'Full-stack Web Developer',
     intro:
       'Passionate in building highly interactive, beautiful web application that bring your idea to life and push your current  business to the next level.',
     stats: {
-      experience: 2,
+      experience: 3,
       projects: 6,
       frameworks: 12,
     },
