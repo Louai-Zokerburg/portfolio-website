@@ -31,9 +31,9 @@ const Home = () => {
         {/* CTA Buttons  */}
         <div className='flex justify-center items-center gap-x-4 mt-8 lg:mt-12'>
 
-          <Link href='projects'>
+          <Link href='https://github.com/Louai-Zokerburg' target='_blank'>
             <Button size='lg'>
-              <p className='font-semibold text-base lg:text-lg'>My projects</p>
+              <p className='font-semibold text-base lg:text-lg'>My Github</p>
             </Button>
           </Link>
           <Link href='https://drive.google.com/file/d/1c7-UIHy8GUvgj2XHuf7nfhUU4vpjRXSt/view' target='_blank'>
