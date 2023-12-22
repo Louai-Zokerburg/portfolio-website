@@ -30,7 +30,7 @@ export type TGeneralInfo = {
 };
 
 // Skills Types
-type TSkillLabel = 'BEGGINER' | 'INTERMIDIATE' | 'ADVENCED' | 'PRO';
+type TSkillLabel = 'BEGGINER' | 'INTERMIDIATE' | 'ADVANCED' | 'PRO';
 type TSkillValue = 22 | 44 | 66 | 88;
 type TSkill = {
   name: string;

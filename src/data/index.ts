@@ -17,7 +17,7 @@ export const generalInfo: TGeneralInfo = {
     intro:
       'Passionate in building highly interactive, beautiful web application that bring your idea to life and push your current  business to the next level.',
     stats: {
-      experience: 3,
+      experience: 2,
       projects: 6,
       frameworks: 12,
     },
@@ -62,7 +62,7 @@ const frontendDevelopment: TField = {
     {
       name: 'Next.js',
       level: {
-        label: 'ADVENCED',
+        label: 'ADVANCED',
         value: 66,
       },
     },
@@ -76,7 +76,7 @@ const frontendDevelopment: TField = {
     {
       name: 'Redux/Redux Toolkit',
       level: {
-        label: 'ADVENCED',
+        label: 'ADVANCED',
         value: 66,
       },
     },
@@ -91,35 +91,35 @@ const backendDevelopment: TField = {
     {
       name: 'Node.js Express.js',
       level: {
-        label: 'ADVENCED',
+        label: 'ADVANCED',
         value: 66,
       },
     },
     {
       name: 'Mongodb, Mongodb Atlas',
       level: {
-        label: 'ADVENCED',
+        label: 'ADVANCED',
         value: 66,
       },
     },
     {
       name: 'Prisma, Prisma Studio',
       level: {
-        label: 'ADVENCED',
+        label: 'ADVANCED',
         value: 66,
       },
     },
     {
       name: 'Restfull APIs',
       level: {
-        label: 'ADVENCED',
+        label: 'ADVANCED',
         value: 66,
       },
     },
     {
       name: 'JWT Auth',
       level: {
-        label: 'ADVENCED',
+        label: 'ADVANCED',
         value: 66,
       },
     },
@@ -135,35 +135,35 @@ const devtoolsDevelopment: TField = {
     {
       name: 'Git & GitHub',
       level: {
-        label: 'ADVENCED',
+        label: 'ADVANCED',
         value: 66,
       },
     },
     {
       name: 'TypeScript',
       level: {
-        label: 'ADVENCED',
+        label: 'ADVANCED',
         value: 66,
       },
     },
     {
       name: 'Firebase',
       level: {
-        label: 'ADVENCED',
+        label: 'ADVANCED',
         value: 66,
       },
     },
     {
       name: 'Material UI',
       level: {
-        label: 'ADVENCED',
+        label: 'ADVANCED',
         value: 66,
       },
     },
     {
       name: 'Shadcn UI',
       level: {
-        label: 'ADVENCED',
+        label: 'ADVANCED',
         value: 66,
       },
     },
