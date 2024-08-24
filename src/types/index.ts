@@ -1,5 +1,5 @@
-import { StaticImageData } from 'next/image';
-import { IconType } from 'react-icons';
+import { StaticImageData } from "next/image";
+import { IconType } from "react-icons";
 
 // General Info Types
 export type TGeneralInfo = {
@@ -18,8 +18,8 @@ export type TGeneralInfo = {
     bio: {
       intro: string;
       main: string;
-      outro: string
-    }
+      outro: string;
+    };
   };
   contact_info: {
     email: string;
@@ -30,7 +30,7 @@ export type TGeneralInfo = {
 };
 
 // Skills Types
-type TSkillLabel = 'BEGGINER' | 'INTERMIDIATE' | 'ADVANCED' | 'PRO';
+type TSkillLabel = "BEGINNER" | "INTERMEDIATE" | "ADVANCED" | "PRO";
 type TSkillValue = 22 | 44 | 66 | 88;
 type TSkill = {
   name: string;
@@ -44,12 +44,12 @@ type TSkill = {
 export type TField = {
   title: string;
   description: string;
-  icon: React.ReactNode;
+  icon: IconType;
   skills: TSkill[];
 };
 
-// Certifecations Types
-export type TCertifecate = {
+// Certifications Types
+export type TCertificate = {
   credential_url: string;
   from: string;
   date: string;
@@ -67,7 +67,7 @@ export type TProject = {
   description: string;
   features: string[];
   technologies: string[];
-  live_demo: string;
-  source_code: string;
+  live_demo?: string;
+  source_code?: string;
   categories: string[];
 };

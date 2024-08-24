@@ -1,18 +1,9 @@
-import Orbits from '@/components/shared/orbits'
-import React from 'react'
+import LoadingUI from "@/components/shared/loading";
+import Orbits from "@/components/shared/orbits";
+import React from "react";
 
 const Loading = () => {
-  return (
-    <section
-      className='relative' >
-      <section className=' z-10 relative container flex flex-col justify-center h-screen items-centner'>
-        <h1 className='text-2xl lg:text-6xl font-bold'>Loading ....</h1>
-      <Orbits />
+  return <LoadingUI />;
+};
 
-      </section>
-
-    </section>
-  )
-}
-
-export default Loading
+export default Loading;
